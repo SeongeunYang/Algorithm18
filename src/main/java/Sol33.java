@@ -1,20 +1,16 @@
-import java.util.Arrays;
-
 public class Sol33 {
     public int[] solution(int[] lottos, int[] win_nums) {
         int[] rank = {6, 6, 5, 4, 3, 2, 1};
-        int count = 0;
-        int miss = 0;
+        int count = 0, miss = 0;
 
-        for (int i = 0; i < lottos.length; i++) {
-            //번호가 0이면 지워진 번호이므로 miss에 다음 인덱스로 넘어가기
-            if (lottos[i] == 0) {
+        for (int i : lottos) {
+            if (i == 0) { //지워진 번호이므로 continue로 비교과정 생략
                 miss++;
                 continue;
             }
 
-            for (int j = 0; j < win_nums.length; j++) {
-                 if (lottos[i] == win_nums[j]) { //찾았으니 break;
+            for (int j : win_nums) {
+                if (i == j) { //찾았으니 break;
                     count++;
                     break;
                 }
