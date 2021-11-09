@@ -14,6 +14,7 @@ public class SumTwoNum {
         return answer.stream().sorted().mapToInt(Integer::intValue).toArray();// 정렬 후 int 배열로 형 변환해서 반환
     }
 
+
     public static void main(String[] args) {
         SumTwoNum method = new SumTwoNum();
         int[] arr = {5, 0, 2, 7};
