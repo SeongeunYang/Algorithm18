@@ -1,7 +1,7 @@
-//부족한 금액 계산하기
 public class calculateMoney {
     public long calMoney(int price, int money, int count) {
-        long fee = (long) count * price * (count + 1) / 2 - money; //등차 수열 공식 이용
+        //등차 수열 공식 이용 a, d = price, n=count로 계산
+        long fee = (long) count * price * (count + 1) / 2 - money;
         return (fee <= 0) ? 0 : fee;
     }
 

@@ -2,12 +2,12 @@ import java.util.Arrays;
 
 public class Harshad {
     public boolean solution(int x) {
-        String[] numArray = String.valueOf(x).split("");
+        String[] numArray = String.valueOf(x).split(""); //숫자 자릿수 다 분리하기
         int sum = 0;
         for (int i = 0; i < numArray.length; i++) {
-            sum += Integer.parseInt(numArray[i]);
+            sum += Integer.parseInt(numArray[i]); //각 자릿수 숫자 다 더하기
         }
-        return (x % sum == 0) ? true : false;
+        return x % sum == 0; //숫자/ 자릿수 다 더한 값이 되면 true, 아니면 false반환
     }
 
     public static void main(String[] args) {

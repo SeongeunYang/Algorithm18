@@ -1,6 +1,6 @@
 public class OddEven {
     public String Check(int num){
-        return (num%2 == 0)? "Even" : "Odd";
+        return (num%2 == 0)? "Even" : "Odd"; //삼항 연산자 사용
     }
 
     public static void main(String[] args) {

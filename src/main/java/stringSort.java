@@ -3,10 +3,10 @@ import java.util.Collections;
 
 public class stringSort {
     public String solution(String s) {
-        String[] answer = s.split("");
-        Arrays.sort(answer, Collections.reverseOrder());
+        String[] answer = s.split(""); // String 분해
+        Arrays.sort(answer, Collections.reverseOrder());// 내림차순 정렬
 
-        return String.join("", answer);
+        return String.join("", answer); // 다시 합치기
     }
 
     public static void main(String[] args) {

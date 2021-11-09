@@ -1,8 +1,8 @@
-//정수를 담고 있는 배열 arr의 평균값을 return하는 함수
 import java.util.Arrays;
 
 public class Average {
     public double cal_avg(int[] arr) {
+        //Arrays.stream을 이용해 평균을 구하고 평균은 못구한다면 0을 리턴
         double average = Arrays.stream(arr).average().orElse(0);
 
         return average;

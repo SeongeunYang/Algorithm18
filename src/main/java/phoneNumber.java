@@ -1,6 +1,7 @@
 public class phoneNumber {
     public String solution(String phone_number) {
-        int len = phone_number.length();
+        int len = phone_number.length();//핸드폰 번호 길이
+        //뒤 4자리를 제외한 길이만큼의 * 배열 생성 + 뒷번호 4자리
         return new String(new char[len - 4]).replace("\0", "*") + phone_number.substring(len - 4, len);
     }
 
