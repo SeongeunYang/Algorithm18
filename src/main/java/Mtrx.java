@@ -15,5 +15,13 @@ public class Mtrx {
         int[][] a = {{1, 2}, {2, 3}};
         int[][] b = {{3, 4}, {5, 6}};
         int[][] newMtrx = SumMtrx.solution(a, b);
+        for (int i = 0; i < newMtrx.length; i++) { //행을 바꿔주는 for문
+            for (int j = 0; j < newMtrx[0].length; j++) { //열을 바꿔주는 for문
+                System.out.print(newMtrx[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
+
+

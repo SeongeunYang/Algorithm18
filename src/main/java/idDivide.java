@@ -2,8 +2,9 @@ import java.util.Arrays;
 
 public class idDivide {
     public int[] solution(int[] arr, int divisor) {
+        // 나눠지는 것들만 새 배열에 저장하기
         int[] anwser = Arrays.stream(arr).filter(i -> i % divisor == 0).sorted().toArray();
-        if(anwser.length == 0){
+        if(anwser.length == 0){ //나눠지는 것이 없으면 -1 반환!
             anwser = new int[] {-1};
         }
         return anwser;
