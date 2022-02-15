@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 
 public class Sol44 {
@@ -28,3 +29,4 @@ public class Sol44 {
         System.out.println(Arrays.toString(method.solution(2, 12)));
     }
 }
+
